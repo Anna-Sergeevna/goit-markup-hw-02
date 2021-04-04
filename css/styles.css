@@ -1,0 +1,101 @@
+/* CSS-переменные */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --accent-text-color: #ffffff;
+  --background-page-color: #e5e5e5;
+}
+body {
+  background-color: var(--background-page-color);
+  color: var(--primary-text-color);
+}
+/* Header */
+ul {
+  list-style: none;
+}
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* ссылки футер rgba(255, 255, 255, 0.6) */
+/* основной фон макета #E5E5E5 */
+.page-header {
+  background-color: #ffffff;
+}
+/* logo */
+.logo1 {
+  color: #2196f3;
+}
+.logo2 {
+  color: #000000;
+}
+/* nav */
+.nav .link {
+  color: var(--title-text-color);
+}
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--accent-color);
+}
+/* contact */
+.h-contact .link {
+  color: var(--primary-text-color);
+}
+.h-contact .link:hover,
+.h-contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* Main */
+/* Герой */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+}
+/* !!!!!!!!!!!! 01:12 button */
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+}
+
+/* section */
+/* Заголовки h2 */
+.section-title {
+  color: var(--title-text-color);
+}
+/* features */
+.features .title {
+  color: var(--title-text-color);
+}
+/* team */
+.our-team {
+  background-color: #f5f4fa;
+}
+.team .title {
+  color: var(--title-text-color);
+}
+/* Footer */
+.footer-page {
+  background-color: #2f303a;
+}
+/* contact */
+.address {
+  color: #ffffff;
+}
+.f-contact .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.f-contact .link:hover,
+.f-contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* МАКЕТ 2 */
+/* Main */
+/* Наши проекты */
+.projects .title {
+  color: var(--title-text-color);
+}

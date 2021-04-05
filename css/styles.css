@@ -1,28 +1,35 @@
-/* CSS-переменные */
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --accent-text-color: #ffffff;
-  --background-page-color: #e5e5e5;
-}
-body {
-  background-color: var(--background-page-color);
-  color: var(--primary-text-color);
-}
-/* Header */
-ul {
-  list-style: none;
-}
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 /* белый #FFFFFF */
 /* акцент #2196F3 */
 /* ссылки футер rgba(255, 255, 255, 0.6) */
 /* основной фон макета #E5E5E5 */
+
+/* CSS-переменные */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --background-page-color: #e5e5e5;
+  --background-btn-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--background-page-color);
+  color: var(--primary-text-color);
+}
+
+/* HEADER */
+/* Шапка сайта */
+ul {
+  list-style: none;
+}
+
 .page-header {
   background-color: #ffffff;
 }
+
 /* logo */
 .logo1 {
   color: #2196f3;
@@ -30,7 +37,11 @@ ul {
 .logo2 {
   color: #000000;
 }
+
 /* nav */
+.nav .link.current {
+  color: var(--accent-color);
+}
 .nav .link {
   color: var(--title-text-color);
 }
@@ -38,6 +49,7 @@ ul {
 .nav .link:focus {
   color: var(--accent-color);
 }
+
 /* contact */
 .h-contact .link {
   color: var(--primary-text-color);
@@ -47,7 +59,7 @@ ul {
   color: var(--accent-color);
 }
 
-/* Main */
+/* MAIN */
 /* Герой */
 .hero {
   background-color: #2f303a;
@@ -55,10 +67,26 @@ ul {
 .hero-title {
   color: #ffffff;
 }
-/* !!!!!!!!!!!! 01:12 button */
-.hero-button {
+
+/* button общая*/
+.button {
   background-color: var(--accent-color);
-  color: var(--accent-text-color);
+  color: var(--primary-white-color);
+}
+/* button Герой*/
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+/* button Наши услуги*/
+.button.secondary {
+  background-color: var(--background-btn-color);
+  color: var(--title-text-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 /* section */
@@ -66,21 +94,27 @@ ul {
 .section-title {
   color: var(--title-text-color);
 }
+
+/* Приемущества */
 /* features */
 .features .title {
   color: var(--title-text-color);
 }
+
+/* Наша команда */
 /* team */
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--background-btn-color);
 }
 .team .title {
   color: var(--title-text-color);
 }
-/* Footer */
+
+/* FOOTER */
 .footer-page {
   background-color: #2f303a;
 }
+
 /* contact */
 .address {
   color: #ffffff;

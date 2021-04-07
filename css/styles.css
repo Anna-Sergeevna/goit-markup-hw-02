@@ -26,7 +26,7 @@ body {
 /* HEADER */
 /* Шапка сайта */
 
-.page-header {
+.header-page {
   background-color: #ffffff;
 }
 
@@ -36,15 +36,15 @@ body {
 
 /* logo */
 .logo {
-  color: #000000;
+  color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
 }
-.accent {
-  color: var(--accent-color);
+.header-page .accent {
+  color: #000000;
 }
 
 /* nav */
@@ -152,22 +152,29 @@ body {
 /* team */
 .our-team {
   background-color: var(--background-btn-color);
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
 }
 .team .title {
   color: var(--title-text-color);
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.team .text {
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 /* FOOTER */
 .footer-page {
   background-color: var(--background-header-footer-color);
 }
+.footer-page .accent {
+  color: var(--primary-white-color);
+}
 
 /* contact */
 .footer-contact {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
 }
